@@ -16,3 +16,7 @@ install:
   - gradlew.bat --version
 build_script:
   - gradlew.bat jar
+artifacts:
+  - path: "**\*.jar"
+    name: MyApp
+    type: zip

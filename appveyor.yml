@@ -16,4 +16,3 @@ install:
   - gradlew.bat --version
 build_script:
   - gradlew.bat jar
-  - dir ./build/lib/

@@ -17,6 +17,6 @@ install:
 build_script:
   - gradlew.bat jar
 artifacts:
-  - path: "**\*.jar"
+  - path: '**\*.jar'
     name: MyApp
     type: zip

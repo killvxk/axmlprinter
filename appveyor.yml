@@ -16,8 +16,13 @@ install:
   - gradlew.bat --version
 build_script:
   - gradlew.bat jar
- provider: Environment
-  name: production
-  on:
-    branch: master # only this will work
-    APPVEYOR_REPO_TAG: true # condition will never be evaluated for annotated tag
+deploy:
+  - provider: Environment
+    name: production
+    on:
+      branch: master
+
+  - provider: Environment
+    name: production
+    on:
+      APPVEYOR_REPO_TAG: true
